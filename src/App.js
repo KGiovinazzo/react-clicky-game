@@ -1,7 +1,7 @@
 import React from 'react';
-import Card from "./components/Card";
-import Wrapper from "./components/Wrapper";
-import Header from "./components/Header";
+import Card from "./components/card";
+import Wrapper from "./components/wrapper";
+import Header from "./components/header";
 import cards from "./images/cards.json";
 import "./App.css";
 
@@ -47,7 +47,7 @@ class App extends React.Component {
   render() {
     return (
       <Wrapper>
-        <Header score={this.state.score} highscore={this.state.highscore}>Clicky Game</Header>
+        <Header score={this.state.score} highscore={this.state.highscore}>Clicky Game!</Header>
         {this.state.cards.map(card => (
           <Card
             clickCount={this.clickCount}
